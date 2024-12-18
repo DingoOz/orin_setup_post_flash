@@ -86,7 +86,7 @@ sudo -H pip3 install -U jetson-stats
 # Install Visual Studio Code (if desired)
 echo "Installing Visual Studio Code..."
 wget -O vscode.deb "https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-arm64"
-sudo apt install -y ./vscode.deb
+DEBIAN_FRONTEND=noninteractive sudo apt install -y ./vscode.deb
 rm vscode.deb
 
 # Install Docker (optional but useful for development)
